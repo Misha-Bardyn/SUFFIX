@@ -1,0 +1,62 @@
+@mixin display($value_display) {
+    display: flex;
+    @if ($value_display == "true") {
+        justify-content: center;
+        align-items: center;
+    } @else {
+        justify-content: space-between;
+    }
+}
+
+@mixin font($value, $f-size, $l-h, $col) {
+    @if ($value == "Regular") {
+        font: {
+            family: "Kanit-Regular";
+            weight: 500;
+        }
+    } @else if($value == "Regular-300") {
+        font: {
+            family: "Kanit-Regular";
+            weight: 300;
+        }
+    } @else if($value == "Medium") {
+        font: {
+            family: "Kanit-Medium";
+            weight: 500;
+        }
+    } @else {
+        font: {
+            family: "Kanit-ExtraLight";
+            weight: 300;
+        }
+    }
+    font-size: $f-size;
+    line-height: $l-h;
+    color: $col;
+    font-style: normal;
+}
+
+@mixin date_item($value, $f-size, $l-h, $col, $l-spacing) {
+    .date_item {
+        @include display("false");
+        .date {
+            @include font($value, $f-size, $l-h, $col);
+            letter-spacing: $l-spacing;
+        }
+        .item {
+            @include font($value, $f-size, $l-h, $col);
+            text-decoration-line: underline;
+            text-transform: $uppercase;
+        }
+        @content;
+    }
+}
+
+@mixin at-vero($value, $f-size, $l-h, $col) {
+    .title {
+        @include font($value, $f-size, $l-h, $col);
+        text-transform: $uppercase;
+
+        @content;
+    }
+}
