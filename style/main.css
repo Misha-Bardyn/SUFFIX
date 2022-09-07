@@ -1,0 +1,581 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Kanit-Regular";
+  src: url(../fonts/Kanit-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Kanit-ExtraLight";
+  src: url(../fonts/Kanit-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "Kanit-Medium";
+  src: url(../fonts/Kanit-Medium.ttf);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1470px;
+  padding: 0px 15px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 45px 0px 45px 0px;
+  width: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.header .header_img:not(:nth-child(5)) {
+  width: 25px;
+}
+
+.header .header_img:nth-child(5) {
+  width: 20px;
+}
+
+.mg {
+  margin-top: 9px;
+  margin-right: 9px;
+}
+
+.big_header_wrapper {
+  max-width: 1470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.big_header_wrapper img {
+  max-width: 50%;
+}
+
+.big_header_wrapper .big_content {
+  width: 100%;
+  background-color: #000000;
+  padding: 0px 110px 0px 110px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.big_header_wrapper .big_content .date_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 66px;
+}
+
+.big_header_wrapper .big_content .date_item .date {
+  font-family: "Kanit-Regular";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #ffffff;
+  font-style: normal;
+  letter-spacing: 7px;
+}
+
+.big_header_wrapper .big_content .date_item .item {
+  font-family: "Kanit-Regular";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #ffffff;
+  font-style: normal;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+.big_header_wrapper .big_content .title {
+  font-family: "Kanit-Medium";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  color: #ffffff;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.big_header_wrapper .big_description {
+  font-family: "Kanit-ExtraLight";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  font-style: normal;
+  margin-bottom: 54px;
+}
+
+.big_header_wrapper .btn_read_more {
+  font-family: "Kanit-Regular";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 58px;
+  color: #ffffff;
+  font-style: normal;
+  max-width: 40%;
+  border: 1px solid white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.big_header_wrapper .btn_read_more:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+  .big_header_wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .big_header_wrapper img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .big_header_wrapper .big_content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  .btn_read_more {
+    font-size: 9px;
+    max-width: 20%;
+  }
+}
+
+.content_boxs_wrapper {
+  max-width: 1149px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.content_boxs_wrapper .content_box {
+  max-width: 50%;
+}
+
+.content_boxs_wrapper .content_box .date_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content_boxs_wrapper .content_box .date_item .date {
+  font-family: "Kanit-Medium";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  font-style: normal;
+  letter-spacing: 6px;
+}
+
+.content_boxs_wrapper .content_box .date_item .item {
+  font-family: "Kanit-Medium";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  font-style: normal;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+.content_boxs_wrapper .content_box .image {
+  max-width: 100%;
+  margin-bottom: 25px;
+}
+
+.content_boxs_wrapper .content_box .image img {
+  max-width: 100%;
+}
+
+.content_boxs_wrapper .content_box .content_title {
+  font-family: "Kanit-Medium";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #1f1f1d;
+  font-style: normal;
+  width: 80%;
+  margin-top: 31px;
+  margin-bottom: 19px;
+}
+
+.content_boxs_wrapper .content_box .description {
+  font-family: "Kanit-Regular";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1f1f1d;
+  font-style: normal;
+  margin-bottom: 63px;
+}
+
+.content_box:not(:last-child) {
+  margin: 0px 30px 0px 0px;
+}
+
+.content_box:last-child {
+  margin-top: 57px;
+}
+
+.small_boxs_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1149px;
+  margin: 0 auto;
+}
+
+.small_boxs_wrapper .small_box .date_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.small_boxs_wrapper .small_box .date_item .date {
+  font-family: "Kanit-Medium";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  font-style: normal;
+  letter-spacing: 6px;
+}
+
+.small_boxs_wrapper .small_box .date_item .item {
+  font-family: "Kanit-Medium";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  font-style: normal;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+.small_boxs_wrapper .small_box .title {
+  font-family: "Kanit-Medium";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1f1f1d;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.small_boxs_wrapper .small_box .small_image {
+  max-width: 100%;
+  margin-bottom: 18px;
+}
+
+.small_boxs_wrapper .small_box .small_image img {
+  max-width: 100%;
+}
+
+.small_box:not(:last-child) {
+  margin: 0px 30px 0px 0px;
+}
+
+.mg-top:nth-child(n + 2) {
+  margin-top: 57px;
+}
+
+@media screen and (max-width: 750px) {
+  .small_boxs_wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .small_boxs_wrapper .small_box {
+    margin: 0 auto;
+  }
+  .small_boxs_wrapper .small_box:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.btn_see-all {
+  font-family: "Kanit-Medium";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  max-width: 238px;
+  height: 42px;
+  background-color: #303030;
+}
+
+.btn_see-all:hover {
+  cursor: pointer;
+}
+
+.btn_see-all:nth-child(5) {
+  margin: 67px auto;
+}
+
+.btn_see-all:nth-child(8) {
+  margin: 36px auto;
+}
+
+.btn_see-all:nth-child(10) {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.event_middle {
+  max-width: 1149px;
+  margin: 60px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.event_middle img {
+  max-width: 50%;
+}
+
+.event_middle .date_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 360px;
+  background-color: #000000;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.event_middle .date_btn .date_event {
+  font-family: "Kanit-Medium";
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 51px;
+  color: #ffffff;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.event_middle .date_btn .btn_subscribe {
+  font-family: "Kanit-Medium";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  width: 35%;
+  height: 12%;
+  margin: 0 auto;
+  border: 1px solid white;
+}
+
+.event_middle .date_btn .btn_subscribe:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+  .event_middle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: none;
+  }
+  .event_middle img {
+    max-width: 100%;
+  }
+  .event_middle .date_btn {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .event_middle .btn_subscribe {
+    text-align: center;
+  }
+}
+
+.items {
+  font-family: "Kanit-Medium";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1f1f1d;
+  font-style: normal;
+  width: 100px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1470px;
+  height: 163px;
+  background-color: #000000;
+}
+
+.footer .footer_img:not(:nth-child(5)) {
+  width: 25px;
+}
+
+.footer .footer_img:nth-child(5) {
+  margin-top: 8px;
+  width: 25px;
+}
+
+@media screen and (max-width: 750px) {
+  .content_boxs_wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 60px;
+  }
+  .content_boxs_wrapper .content_box {
+    max-width: none;
+    margin: 0 auto;
+  }
+  .content_boxs_wrapper .content_box .image img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
